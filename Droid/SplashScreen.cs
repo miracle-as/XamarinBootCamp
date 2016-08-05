@@ -5,7 +5,7 @@ using MvvmCross.Droid.Views;
 namespace XamBootCamp.Droid
 {
     [Activity(
-        Label = "XamBootCamp.Droid"
+        Label = "Boot Camp"
         , MainLauncher = true
         , Icon = "@mipmap/icon"
         , Theme = "@style/Theme.Splash"

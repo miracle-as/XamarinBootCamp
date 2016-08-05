@@ -16,11 +16,11 @@ namespace XamBootCamp.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UILabel Label { get; set; }
+        UIKit.UILabel Label { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UITextField TextField { get; set; }
+        UIKit.UITextField TextField { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
@@ -28,6 +28,7 @@ namespace XamBootCamp.iOS.Views
                 Label.Dispose ();
                 Label = null;
             }
+
             if (TextField != null) {
                 TextField.Dispose ();
                 TextField = null;

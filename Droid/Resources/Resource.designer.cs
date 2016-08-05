@@ -109,7 +109,7 @@ namespace XamBootCamp.Droid
 			public const int MvxBindingTagUnique = 2131034113;
 			
 			// aapt resource value: 0x7f050002
-			public const int myButton = 2131034114;
+			public const int textView1 = 2131034114;
 			
 			static Id()
 			{
@@ -128,10 +128,7 @@ namespace XamBootCamp.Droid
 			public const int FirstView = 2130968576;
 			
 			// aapt resource value: 0x7f040001
-			public const int Main = 2130968577;
-			
-			// aapt resource value: 0x7f040002
-			public const int SplashScreen = 2130968578;
+			public const int SplashScreen = 2130968577;
 			
 			static Layout()
 			{
