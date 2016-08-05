@@ -16,6 +16,7 @@ namespace XamBootCamp.iOS.Views
             var set = this.CreateBindingSet<FirstView, XamBootCamp.ViewModels.FirstViewModel>();
             set.Bind(Label).To(vm => vm.Hello);
             set.Bind(TextField).To(vm => vm.Hello);
+            set.Bind(GoDetailsButton).To(vm => vm.ShowDetailsCommand);
             set.Apply();
         }
     }

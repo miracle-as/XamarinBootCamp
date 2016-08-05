@@ -11,5 +11,24 @@ namespace XamBootCamp.ViewModels
             get { return _hello; }
             set { SetProperty (ref _hello, value); }
         }
+
+        private IMvxCommand _showDetailsCommand;
+        public IMvxCommand ShowDetailsCommand
+        {
+            get
+            {
+                if (_showDetailsCommand == null)
+                {
+                    _showDetailsCommand = new MvxCommand<FirstViewModel>(ShowDetails);
+                }
+
+                return _showDetailsCommand;
+            }
+        }
+
+        protected void ShowDetails(FirstViewModel vm)
+        {
+            ShowViewModel<DetailsViewModel>();
+        }
     }
 }

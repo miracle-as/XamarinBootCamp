@@ -16,6 +16,10 @@ namespace XamBootCamp.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton GoDetailsButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel Label { get; set; }
 
         [Outlet]
@@ -24,6 +28,11 @@ namespace XamBootCamp.iOS.Views
 
         void ReleaseDesignerOutlets ()
         {
+            if (GoDetailsButton != null) {
+                GoDetailsButton.Dispose ();
+                GoDetailsButton = null;
+            }
+
             if (Label != null) {
                 Label.Dispose ();
                 Label = null;
