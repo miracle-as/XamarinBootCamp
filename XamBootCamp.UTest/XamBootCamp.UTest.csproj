@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewModelTest.cs" />
+    <Compile Include="Services\MockApplicationVersionService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -58,6 +59,9 @@
       <Project>{9C7B7F83-A6E9-43BD-BB62-BD0DAF9BE2E2}</Project>
       <Name>XamBootCamp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
