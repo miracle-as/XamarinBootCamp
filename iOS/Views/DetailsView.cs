@@ -3,6 +3,7 @@ using MvvmCross.Binding.BindingContext;
 using MvvmCross.iOS.Views;
 using Praeclarum.UI;
 using UIKit;
+using XamBootCamp.Localization;
 
 namespace XamBootCamp.iOS
 {
@@ -26,7 +27,7 @@ namespace XamBootCamp.iOS
 
         protected void SetupLayout()
         {
-            Title = "Details";
+            Title = AppResources.DetailsView_Title;
 
             View.BackgroundColor = UIColor.White;
 
