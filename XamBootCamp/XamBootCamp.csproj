@@ -37,6 +37,7 @@
     <Compile Include="Localization\AppResources.Designer.cs">
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Services\ApplicationVersionService\IApplicationVersionService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Platform">
@@ -64,6 +65,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Localization\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\ApplicationVersionService\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

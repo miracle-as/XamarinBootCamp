@@ -1,6 +1,7 @@
 using MvvmCross.Core.ViewModels;
 using MvvmCross.iOS.Platform;
 using MvvmCross.iOS.Views.Presenters;
+using MvvmCross.Platform;
 using MvvmCross.Platform.Platform;
 using UIKit;
 
@@ -26,6 +27,13 @@ namespace XamBootCamp.iOS
         protected override IMvxTrace CreateDebugTrace()
         {
             return new DebugTrace();
+        }
+
+        protected override void InitializeLastChance()
+        {
+            base.InitializeLastChance();
+
+            Mvx.RegisterSingleton<IApplicationVersionService>(new ApplicationVersionService());
         }
     }
 }

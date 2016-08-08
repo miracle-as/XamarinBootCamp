@@ -20,6 +20,7 @@ namespace XamBootCamp.iOS.Views
             set.Bind(Label).To(vm => vm.Hello);
             set.Bind(TextField).To(vm => vm.Hello);
             set.Bind(GoDetailsButton).To(vm => vm.ShowDetailsCommand);
+            set.Bind(ApplicationVersionLabel).To(vm => vm.ApplicationVersionString);
             set.Apply();
         }
     }

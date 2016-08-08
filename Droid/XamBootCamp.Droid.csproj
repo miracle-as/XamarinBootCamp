@@ -81,6 +81,7 @@
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
+    <Compile Include="Services\ApplicationVersionService\ApplicationVersionService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -99,6 +100,10 @@
     <AndroidResource Include="Resources\layout\SplashScreen.axml" />
     <AndroidResource Include="Resources\values\SplashStyle.xml" />
     <AndroidResource Include="Resources\drawable\splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Services\ApplicationVersionService\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

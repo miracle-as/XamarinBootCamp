@@ -5,6 +5,22 @@ namespace XamBootCamp.ViewModels
     public class FirstViewModel 
         : MvxViewModel
     {
+        private IApplicationVersionService _applicationVersionService;
+        public FirstViewModel(IApplicationVersionService applicationVersionService)
+        {
+            _applicationVersionService = applicationVersionService;         
+        }
+
+        public string ApplicationVersionString
+        {
+            get
+            {
+                return string.Format("{0} ({1})",
+                                     _applicationVersionService.ApplicationVersion,
+                                     _applicationVersionService.ApplicationBuildNumber);
+            }
+        }
+
         private string _hello = "Hello MvvmCross";
         public string Hello
         { 

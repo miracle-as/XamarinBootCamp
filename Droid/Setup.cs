@@ -20,5 +20,12 @@ namespace XamBootCamp.Droid
         {
             return new DebugTrace();
         }
+
+        protected override void InitializeLastChance()
+        {
+            base.InitializeLastChance();
+
+            Mvx.RegisterSingleton<IApplicationVersionService>(new ApplicationVersionService());
+        }
     }
 }
